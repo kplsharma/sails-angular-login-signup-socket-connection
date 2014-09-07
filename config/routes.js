@@ -33,9 +33,23 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': {
-    view: 'homepage'
-  }
+    view: 'static/index'
+  },
 
+  
+
+ // *   GET /boat/:id? -> BoatController.find                                   *
+ //  *  POST /boat -> BoatController.create                                     *
+ //  *  PUT /boat/:id -> BoatController.update                                  *
+ //  *  DELETE /boat/:id -> BoatController.destroy                              *
+
+  'POST /user': 'UserController.create',
+  'GET /show/:id?': 'UserController.show',
+  'GET /edit/:id?': 'UserController.edit',
+  'PUT /update': 'UserController.update',
+  'DELETE /destroy':'UserController.destroy'
+
+  
   /***************************************************************************
   *                                                                          *
   * Custom routes here...                                                    *

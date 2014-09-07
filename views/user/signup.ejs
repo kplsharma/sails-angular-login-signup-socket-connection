@@ -1,0 +1,32 @@
+<div class="well well-sm" style="height:auto;  width:400px; margin:0 auto; margin-top:50PX;" >
+<h3>hello this is signup page</h3>
+		<form class="form-signup" validate name="signupForm" method="post"  ng-controller="SignupController" action="/user/create">
+			<div class="form-elm">
+			<input type="text" name="fullname" class="
+			form-control" ng-model="user.fullname" required placeholder="Full Name" />
+			</div>
+
+			<div class="form-elm">
+			<input type="text" name="username" class="
+			form-control" ng-model="user.username" required placeholder="User Name" />
+			</div>
+			<!-- <span ng-show="loginForm.userName.$invalid" ></span> -->
+			
+			<div class="form-elm">
+			<input type="email" name="useremail" class="form-control" ng-model="user.email"  required placeholder="Email Address" />
+			</div>
+			<div class="form-elm">
+			<input type="password" name="password" class="form-control" ng-model="user.password"  required placeholder="Password" />
+			</div>
+			
+			<div class="form-elm">
+
+			
+
+			<input type="submit"  class="btn btn-primary" value="signup" style="width:100%;" ng-click="submit(user)" />
+			</div>
+		</form>
+
+		<pre>form = {{user | json}}</pre>
+    	<pre>master = {{master | json}}</pre>
+</div>

@@ -1,0 +1,28 @@
+<div class="well well-sm" style="height:auto;  width:400px; margin:0 auto; margin-top:50PX;" >
+
+	<h3>hello this is user details page</h3>
+	<form class="form-signup" novalidate method="post" action="/user/update">
+	<table class="table">
+	<tr>
+		<td> Full Name : </td> 
+		<td> <input type="text" name="fullname" class="form-control" value="<%= user.fullname %>" /> </td>
+	</tr>
+	<tr>
+		<td> User Name : </td> 
+		<td> <input type="text" class="form-control" name="username" value="<%= user.username %>"/> </td>
+	</tr>
+	<tr>
+		<td>  Email : </td> 
+		<td> <input type="email" name="email" class="form-control" value="<%= user.email %>" /> </td>
+	</tr>
+	<tr>
+		<td><input type="hidden" name="id" value="<%= user.id %>" />
+		<input type="submit" value="Save Change" class="btn btn-primary btn-block btn-lg" /> </td>
+	</tr>
+	</table>
+
+	</form>
+
+	<br>
+	<a href="/user" class="btn btn-sm btn-warning"> Back </a>
+</div>

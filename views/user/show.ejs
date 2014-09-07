@@ -1,0 +1,11 @@
+<div class="well well-sm" style="height:auto;  width:400px; margin:0 auto; margin-top:50PX;" >
+
+	<h3>hello this is user details page</h3>
+	<div>
+		<h5><span>Full Name : </span> <span><%= user.fullname %></span></h5>
+		<h5><span>User Name : </span> <span><%= user.username %></span></h5>
+		<h5><span> Email : </span> <span><%= user.email %></span></h5>
+		</div>
+		<br>
+		<a href="/user/edit/<%= user.id %>" class="btn btn-sm btn-primary"> Edit </a>
+</div>
